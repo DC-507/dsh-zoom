@@ -13,16 +13,16 @@ DeepSeek Harness ships one typography setting, `ui-theme.fontSize`, which affect
 **In the app** — sidebar → **Plugins → Add plugin**, then enter:
 
 ```
-dsh-zoom
+github:DC-507/dsh-zoom
 ```
 
-The Host reads the package from the registry, confirms it is a bundle, and installs it. Choose **Enable now** when the install finishes.
+The Host reads the spec, confirms the package is a bundle, and installs it. Choose **Enable now** when the install finishes. (An npm release may follow; that would make the shorter `dsh-zoom` spec work too.)
 
 **From a terminal** (bundled CLI):
 
 ```sh
 "/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh" \
-  plugin --profile desktop add dsh-zoom
+  plugin --profile desktop add github:DC-507/dsh-zoom
 ```
 
 A restart is the guaranteed way to activate it; profiles with HMR usually recompose on their own.
@@ -89,11 +89,11 @@ DSH 只提供一个排版设置 `ui-theme.fontSize`，而且**只影响对话正
 
 ## 安装
 
-应用内：侧栏 **插件 → Add plugin**，填 `dsh-zoom`，装完点 **Enable now**。命令行同样可以：
+应用内：侧栏 **插件 → Add plugin**，填 `github:DC-507/dsh-zoom`，装完点 **Enable now**。命令行同样可以：
 
 ```sh
 "/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh" \
-  plugin --profile desktop add dsh-zoom
+  plugin --profile desktop add github:DC-507/dsh-zoom
 ```
 
 | 快捷键 | 动作 |

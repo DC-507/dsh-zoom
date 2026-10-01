@@ -30,7 +30,15 @@
     "ui",
     "accessibility"
   ],
-  "author": "danelchen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DC-507/dsh-zoom.git"
+  },
+  "homepage": "https://github.com/DC-507/dsh-zoom#readme",
+  "bugs": {
+    "url": "https://github.com/DC-507/dsh-zoom/issues"
+  },
+  "author": "DC-507",
   "license": "MIT",
   "engines": {
     "node": ">=20"
