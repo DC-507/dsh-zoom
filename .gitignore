@@ -9,3 +9,7 @@ node_modules/
 .DS_Store
 *.log
 npm-debug.log*
+
+# Kept locally until the OAuth token carries the `workflow` scope:
+# gh auth refresh -h github.com -s workflow
+.github/workflows/test.yml
