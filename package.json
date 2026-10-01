@@ -1,0 +1,48 @@
+{
+  "name": "dsh-zoom",
+  "version": "0.1.0",
+  "description": "Global UI zoom for the DeepSeek Harness web client: Cmd/Ctrl +/-/0, persisted across restarts.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/smoke.cjs"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "zoom",
+    "ui",
+    "accessibility"
+  ],
+  "author": "danelchen",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "cordis.patch.yml"
+    },
+    "client": {
+      "immediately": true,
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}

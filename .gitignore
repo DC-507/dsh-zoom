@@ -1,0 +1,11 @@
+# Local maintenance helpers and machine state — never committed.
+backup/
+*.tgz
+
+# The profile symlinks this package into its own node_modules; nothing to track.
+node_modules/
+
+# Editor / OS noise.
+.DS_Store
+*.log
+npm-debug.log*

@@ -1,0 +1,7 @@
+# dsh-zoom bundle layer: mounted after the shipped bundles, before the
+# profile's own user layer. The row name resolves to this package (the Loader
+# anchors bare specifiers at the profile directory, where this package is
+# installed, and Node self-reference covers the bundle's own directory).
+- insert:
+    - id: dsh-zoom
+      name: dsh-zoom
